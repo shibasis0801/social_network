@@ -158,16 +158,16 @@ buttonFakeData.addEventListener('click', event => {
             if (list !== null)
                 divList.removeChild(list);
             
-            const fakePeopleNames = people
-                .map(person => Object.values(person.name).join(' '))
-                .map(fullName => text(fullName))
-                .map(textNode => html('li', {}, [ textNode ]));
+            const fakePeopleNames = people.map(person => Object.values(person.name).join(' '));
 
             console.log(fakePeopleNames);
 
-            const fakePeople = html('ul', { id : "listFakePeople" }, fakePeopleNames);            
-
-            divList.appendChild(fakePeople);
+            divList.appendChild(
+                html('ul', { id : "listFakePeople" }, 
+                fakePeopleNames.map(name => 
+                        html('li', {}, [ text(name) ])
+                ))
+            );
         })
 }); 
 
