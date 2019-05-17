@@ -28,8 +28,14 @@ const buttonFakeData = document.getElementById('buttonFakeData');
 const inputCount = document.getElementById('inputCount');
 
 buttonFakeData.addEventListener('click', event => {
+    
     event.preventDefault();
-    console.log(inputCount.value);
+    getRandomUsers(inputCount.value)
+        .then(people => {
+            people.forEach(person => {
+                console.log(person);
+            });
+        })
 });
 
 
