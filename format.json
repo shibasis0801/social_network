@@ -1,0 +1,62 @@
+{
+  "results": [
+    {
+      "gender": "male",
+      "name": {
+        "title": "mr",
+        "first": "charles",
+        "last": "flores"
+      },
+      "location": {
+        "street": "9762 karen dr",
+        "city": "shiloh",
+        "state": "west virginia",
+        "postcode": 32042,
+        "coordinates": {
+          "latitude": "71.3587",
+          "longitude": "-12.6212"
+        },
+        "timezone": {
+          "offset": "+3:30",
+          "description": "Tehran"
+        }
+      },
+      "email": "charles.flores@example.com",
+      "login": {
+        "uuid": "249f6df3-a59c-43b9-9686-c718e8db6192",
+        "username": "orangegorilla794",
+        "password": "helena",
+        "salt": "OuJWoTJM",
+        "md5": "3966d9f6b25d92d6f92e9cc33d5a6ee9",
+        "sha1": "968e609cf6296ec1bd015a2c282bdfb2d56c981c",
+        "sha256": "df42a4400bfb7d965748a0756f416407e64822bb1981d451e15c473671aa3fba"
+      },
+      "dob": {
+        "date": "1969-06-29T01:58:31Z",
+        "age": 49
+      },
+      "registered": {
+        "date": "2003-11-07T23:08:19Z",
+        "age": 15
+      },
+      "phone": "(858)-730-5131",
+      "cell": "(631)-193-3228",
+      "id": {
+        "name": "SSN",
+        "value": "654-85-4663"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/51.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/51.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/51.jpg"
+      },
+      "nat": "US"
+    }
+  ],
+  "info": {
+    "seed": "4318e77e22262cab",
+    "results": 1,
+    "page": 1,
+    "version": "1.2"
+  }
+}
