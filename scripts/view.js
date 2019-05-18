@@ -43,7 +43,7 @@ function appendChildren(element, children) {
 
 function attachFramework(element, framework, tag, modifier) {
     if (framework === "bootstrap") {
-        bootstrap(element, tag, modifier);
+        bootstrap.apply(element, tag, modifier);
     }
     else if (framework === "bulma") {
         console.log("To Be Implemented")
@@ -70,4 +70,4 @@ function html(tag, attributes = {}, children = [], modifier = "primary", framewo
 
 function text(content) { return document.createTextNode(content); }
 
-export { html, text };
+export { html, text, insertAttributes, appendChildren };
