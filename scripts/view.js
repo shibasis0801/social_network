@@ -1,19 +1,4 @@
-function bootstrap(element, tag, modifier) {
-    const styles = {
-        'ul': 'list-group',
-        'li': 'list-group-item',
-        'button': `btn btn-${modifier}`,
-        'alert': `alert alert-${modifier}`,
-    }
-
-    let classes = styles[tag].split(' ');
-    classes.forEach(className =>
-        element.classList.add(className)
-    );
-
-    return element;
-}
-
+import { bootstrap } from './bootstrap.js'
 
 function preprocessTag(tag) {
     let final = tag;
